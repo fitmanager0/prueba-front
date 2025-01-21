@@ -1,32 +1,33 @@
-export const navConfig = [
+export interface INavConfig {
+  id: number;
+  name: string;
+  href: string;
+  private: boolean;
+}
+export const navConfig : INavConfig[] = [
   {
     id: 1,
     name: "Inicio",
     href: "/",
+    private: false,
   },
   {
     id: 2,
-    name: "Sobre Nosotros",
-    href: "/sobre-nosotros",
+    name: "Planes",
+    href: "/planes",
+    private: false,
   },
   {
     id: 3,
-    name: "Contacto",
-    href: "/contacto",
+    name: "Sobre Nosotros",
+    href: "/sobre-nosotros",
+    private: false,
   },
   {
     id: 4,
-    name: "Planes",
-    href: "/planes",
+    name: "Contacto",
+    href: "/contacto",
+    private: false,
   },
-  {
-    id: 5,
-    name: "Iniciar Sesión",
-    href: "/login",
-  },
-  {
-    id: 6,
-    name: "Registrarse",
-    href: "/registro",
-  }
+
 ];
